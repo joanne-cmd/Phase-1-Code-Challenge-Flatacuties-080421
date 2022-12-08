@@ -16,7 +16,7 @@ function showCharacter(names){
         let span = document.createElement("span")
             span.textContent = name.name
             characterNav. appendChild(span)
-        span.addEventListener("click" ,(event) =>{
+           span.addEventListener("click" ,(event) =>{
             event.preventDefault()
             charactersName(name)
         })
@@ -43,23 +43,24 @@ let button =document.querySelector("#reset-btn")
 button.addEventListener("click",(e)=>{
     document.querySelector("#vote-count").textContent=0
 })
-const form2= document.getElementById(" character-form")
-form2.addEventListener("submit", e =>{
-    e.preventDefault()
-    newAnimal(animal)
 
-} )
- function newAnimal(animal){
-    form2={
-        "name":document.querySelector("name" ).value,
-        "image":document.querySelector("image-url").value
-    } 
-    showCharacter(names)
-    charactersName(details)
- }
- newAnimal(animal)
- let button2= document.querySelector("#enter")
- button2.addEventListener("click",event=>{
-    event.preventDefault()
-    document.querySelector("# character-form").value
- })
+// const form2= document.getElementById(" character-form")
+// form2.addEventListener("submit", e =>{
+//     e.preventDefault()
+//     newAnimal(animal)
+
+// } )
+//  function newAnimal(animal){
+//     form2={
+//         "name":document.querySelector("name" ).value,
+//         "image":document.querySelector("image-url").value
+//     } 
+//     showCharacter(names)
+//     charactersName(details)
+//  }
+//  newAnimal(animal)
+//  let button2= document.querySelector("#enter")
+//  button2.addEventListener("click",event=>{
+//     event.preventDefault()
+//     document.querySelector("# character-form").value
+//  })
